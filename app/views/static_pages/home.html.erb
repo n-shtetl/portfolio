@@ -1,2 +1,13 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<div class="page-container">
+    <div class="large-box">
+        <div class="small-box">
+            <div class="smallest-box">
+                <span>I'm Max!</span>
+                <div class="link-box">
+                    <div class="projects-link-container"><%= link_to "projects", projects_path, class: "projects-link" %></div>
+                    <div class="resume-link-container"><%= link_to "resume", resume_path, class: "resume-link" %></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

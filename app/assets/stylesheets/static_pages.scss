@@ -1,3 +1,95 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+    font-family: Arial;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.page-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .large-box {
+        height: 47%;
+        width: 30%;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .small-box {
+            height: 37%;
+            width: 37%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .smallest-box {
+                color: #636363;
+                display: block;
+                height: 90%;
+                width: 90%;
+                text-align: center;
+                margin-top: 20%;
+                .link-box {
+                    margin-top: 20px;
+                    .resume-link-container {
+                        margin-top: 10px;
+                        .resume-link  {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        width: 100%;
+        
+        
+    }
+}
+
+.svg {
+    width: 100%;
+    margin-bottom: -10px;
+    margin-top: 150px;
+}
+
+
+.bottom {
+    margin-top: -10px;
+    width: 100vw;
+    height: 32vh;
+    background-color: #2A317A;
+}
+
+.top {
+    height: 25vh;
+    width: 100vw;
+    background-color: #3A43AF;
+    position: absolute;
+}
+
+.moby {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.2em;
+    color: white;
+    position: absolute;
+    top: 30vh;
+    width: 75%;
+    left: 2vw;
+    line-height: 25px;
+}
+
+
+
+
+
+
