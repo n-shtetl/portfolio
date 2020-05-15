@@ -4,6 +4,7 @@
 
 * {
     font-family: Arial;
+
 }
 
 body {
@@ -17,21 +18,23 @@ body {
     align-items: center;
     height: 100%;
     .large-box {
-        height: 47%;
-        width: 30%;
+        height: 320px;
+        width: 320px;
         background-color: #f2f2f2;
         display: flex;
         justify-content: center;
         align-items: center;
         .small-box {
-            height: 37%;
-            width: 37%;
+            position: absolute;
+            height: 130px;
+            width: 130px;
             background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index: 2;
             .smallest-box {
-                color: #636363;
+                color: #4e4e4e;
                 display: block;
                 height: 90%;
                 width: 90%;
@@ -40,10 +43,27 @@ body {
                 .link-box {
                     margin-top: 20px;
                     .resume-link-container {
+                        display: inline-block;
+                        border-bottom: 2px solid #fed700;
                         margin-top: 10px;
                         .resume-link  {
                             text-decoration: none;
+                            color: #4e4e4e;
                         }
+                    }
+                    .resume-link-container:hover {
+                        border-bottom: 2px solid #daa520;
+                    }
+                    .projects-link-container {
+                        display: inline-block;
+                        border-bottom: 2px solid #fed700;
+                        .projects-link {
+                            text-decoration: none;
+                            color: #4e4e4e;
+                        }
+                    }
+                    .projects-link-container:hover {
+                        border-bottom: 2px solid #daa520;
                     }
                 }
             }
@@ -51,8 +71,6 @@ body {
     }
     .container {
         width: 100%;
-        
-        
     }
 }
 
@@ -88,8 +106,243 @@ body {
     line-height: 25px;
 }
 
+.wavy {
+    position: absolute;
+    height: 320px;
+    width: 320px;
+    top: -24vh;
+    z-index: 1;
+}
 
+path {
+    stroke: #fed700;
+    stroke-width: 2px;
+    fill: none;
+    stroke-linecap: round;
+}
 
+.svg-container {
+    position: relative;
+}
 
+.home-and-download {
+    height: 70px;
+    display: flex;
+    justify-content: row;
+}
 
+.home-link {
+    text-decoration: none;
+    color: #4e4e4e;
+    display: flex;
+    align-items: center;
+}
+
+.home div {
+    border: 2px solid #4e4e4e;
+    padding: 5px 10px 5px 10px;
+}
+
+.home div:hover {
+    box-shadow: 2px 2px#daa521;
+    cursor: pointer;
+}
+
+.download-link {
+    text-decoration: none;
+    color: #4e4e4e;
+    display: flex;
+    align-items: center;
+}
+
+.download {
+    margin-left: 12px;
+}
+
+.download div {
+    border: 2px solid #4e4e4e;
+    padding: 5px 10px 5px 10px;
+}
+
+.download div:hover {
+    box-shadow: 2px 2px#daa521;
+    cursor: pointer;
+}
+
+.page-div {
+    font-family: arial;
+    color: #4e4e4e;
+    max-width: 70%;
+    margin: auto;
+}
+
+.title-and-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.name-and-title {
+    border: 2px solid #4e4e4e;
+    padding: 6px 12px 6px 12px;
+    box-shadow: 4px 3px#daa521;
+}
+
+.name {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 1em;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.contact-sheet {
+    border: 2px solid #4e4e4e;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    height: 30px;
+    box-shadow: 4px 3px #fed700;
+    margin-top: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: #4e4e4e;
+    // width: 23%;
+}
+
+.link-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+
+.link-wrapper:hover {
+    border-bottom: 2px solid #fed700;
+
+}
+
+.contact-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.technologies-page-break {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .technologies {
+        font-size: 1.3em;
+        font-weight: 800;
+        border: 2px solid #4e4e4e;
+        padding: 3px 4px 3px 4px;
+        box-shadow: 3px 3px #daa520;
+    }
+    .page-break {
+        width: 80%;
+        height: 4px;
+        background-color: #4e4e4e;
+        margin-top: 12px;
+    }
+}
+
+.technologies {
+    margin-top: 15px;
+    .proficient {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: row;
+        .highlight {
+            background-color: #fafad2;
+            margin-right: 5px;
+            height: 17px;
+        }
+    }
+    .knowledgeable {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: row;
+        .highlight {
+            background-color: #fafad2;
+            margin-right: 5px;
+            height: 17px;
+        }
+    }
+}
+
+.projects-page-break {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .projects {
+        font-size: 1.3em;
+        font-weight: 800;
+        border: 2px solid #4e4e4e;
+        padding: 3px 4px 3px 4px;
+        box-shadow: 3px 3px #daa520;
+    }
+    .page-break {
+        width: 80%;
+        height: 4px;
+        background-color: #4e4e4e;
+        margin-top: 12px;
+    }
+}
+
+.projects {
+    margin-top: 15px;
+    .project-title {
+        display: inline-block;
+        font-size: 1.2em;
+        font-weight: 600;
+        border-bottom: 2px solid #fed700;
+    }
+    .project-subtitle {
+
+    }
+    .project-list {
+        font-size: 0.9em;
+        li {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.employment-page-break {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .employers {
+        font-size: 1.3em;
+        font-weight: 800;
+        border: 2px solid #4e4e4e;
+        padding: 3px 4px 3px 4px;
+        box-shadow: 3px 3px #daa520;
+    }
+    .page-break {
+        width: 80%;
+        height: 4px;
+        background-color: #4e4e4e;
+        margin-top: 12px;
+    }
+}
+
+.bold {
+    font-weight: 600;
+}
 

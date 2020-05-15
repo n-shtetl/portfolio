@@ -1,13 +1,59 @@
 <div class="page-container">
+    <div class="svg-container">
+        <svg class="wavy">
+            <path class="path1" d="M20,20 L50,100 L90,50"></path>
+            <path class="path2" d="M20,20 L50,100 L90,50"></path>
+            <path class="path3" d="M20,20 L50,100 L90,50"></path>
+            <path class="path4" d="M20,20 L50,100 L90,50"></path>
+            <path class="path5" d="M20,20 L50,100 L90,50"></path>
+            <path class="path6" d="M20,20 L50,100 L90,50"></path>
+            <path class="path7" d="M20,20 L50,100 L90,50"></path>
+            <path class="path8" d="M20,20 L50,100 L90,50"></path>
+            <path class="path9" d="M20,20 L50,100 L90,50"></path>
+            <path class="path10" d="M20,20 L50,100 L90,50"></path>
+        </svg>
+    </div>
     <div class="large-box">
         <div class="small-box">
             <div class="smallest-box">
                 <span>I'm Max!</span>
                 <div class="link-box">
                     <div class="projects-link-container"><%= link_to "projects", projects_path, class: "projects-link" %></div>
+                    <br>
                     <div class="resume-link-container"><%= link_to "resume", resume_path, class: "resume-link" %></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    let xs = [];
+    for (let i = 0; i < 500; i++) {
+        xs.push(i);
+    }
+
+    let t = 0;
+
+    function animate() {
+        for (let i = 1; i <= 10; i++) {
+            let points = xs.map(x => {
+            let y = (i * 25) * Math.sin(1.15*x+t/10)
+            return [x, y];
+             });
+            let path = "M" + points.map(p => {
+            return p[0] + "," + p[1];
+            }).join(" L")
+
+            document.querySelector(`.path${i}`).setAttribute("d", path);
+        }
+
+        t += 0.125;
+
+        requestAnimationFrame(animate);
+
+    }
+    
+    animate();
+    
+</script>

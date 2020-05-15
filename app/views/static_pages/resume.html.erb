@@ -1,2 +1,122 @@
-<h1>StaticPages#resume</h1>
-<p>Find me in app/views/static_pages/resume.html.erb</p>
+<div class="page-div">
+    <nav class="home-and-download">
+        <a href=<%= root_path %> class="home-link">
+            <div class="home">
+                <div>Home</div>
+            </div>
+        </a>
+        <a class="download-link" href="resumeLatest.pdf" download>
+            <div class="download">
+                <div>Download resume</div>
+            </div>
+        </a>
+    </nav>
+    <header class="title-and-contact">
+        <div class=name-and-title>
+            <div class="name">Max Phillips</div>
+            <div class="title">Software Engineer</div>
+        </div>
+
+        <div class="contact-sheet">
+            <div class="contact-me">contact me:</div>
+            <div class="contact-links">
+                <div class="link-wrapper"><a class="link" href="mailto:yomouschi@gmail.com">email</a></div>
+                <div class="link-wrapper"><a class="link" href="https://www.linkedin.com/in/max-phillips-1a273a198/">linkedin</a></div>
+                <div class="link-wrapper"><a class="link" href="https://www.github.com/n-shtetl">github</a></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="technologies-page-break">
+        <div class="technologies">TECHNOLOGIES</div>
+        <div class="page-break"></div>
+    </div>
+
+    <div class="technologies">
+        <div class="proficient">
+            <div class="highlight">PROFICIENT:</div>
+            ReactJS, Redux, JavaScript / ES6, Ruby, NodeJS, Rails, JQuery, git, CSS, HTML5, MongoDB, PostgreSQL, OOP, SQL
+        </div>
+        <div class="knowledgeable">
+            <div class="highlight">KNOWLEGEABLE:</div>
+            C / C++, D3.js, npm, RSpec, Capybara, Express.js, AWS, AJAX, Axios, Unix, TTD, Mongoose
+        </div>
+    </div>
+
+    <div class="projects-page-break">
+        <div class="projects">PROJECTS</div>
+        <div class="page-break"></div>
+    </div>
+
+    <div class="projects">
+        <div class="project-title">meanEats</div>
+        <br><br/>
+        <div class="project-subtitle"><i>Full stack pixel-perfect tribute to the Serious Eats website built with Rails and ReactJS / Redux</i></div>
+        <ul class="project-list">
+            <li>Implemented n-ary tree tag system for organizing articles by tags for intuitive site navigation and eliminating redundant searches by users for common keywords.</li>
+            <li>Designed smooth single-page interface free of page refreshes with React / React-Router, which allows users to fetch comments and additional posts, open modals, and explore new content.</li>
+            <li>Developed scroll event handlers with JQuery to update page styling, allowing for better code readability over vanilla JS DOM manipulation.</li>
+            <li>Established user authentication with BCrypt, which salts every password hash to prevent rainbow table attacks.</li>
+            <li>Implemented dynamic routing with React-Router to create nested views and dynamic route matching, which cuts down on repetitive code.</li>
+        </ul>
+        <div class="project-title">SquareGroove</div>
+        <br><br/>
+        <div class="project-subtitle"><i>Interactive beatmaker built with MERN Stack</i></div>
+        <ul class="project-list">
+            <li>Established git workflow with two other team members to efficiently delegate responsibilities and avoid merge conflicts.</li>
+            <li>Designed bpm slider and timer component for controlling tempo to give users greater variability in song composition.</li>
+        </ul>
+        <div class="project-title">JosephusSim</div>
+        <br><br/>
+        <div class="project-subtitle"><i>Algorithm visualizer built with D3.js</i></div>
+        <ul class="project-list">
+            <li>Designed animated scatter plot with labeled axes, tic marks, and adjustable sliders for data visualization using D3.js because it only uses HTML, CSS, and SVG’s allowing for cross-browser compatibility without special plug-ins.</li>
+            <li>Developed visually intuitive sliders for greater user interaction using JQuery UI because of its comprehensive library of widgets and effects. </li>
+            <li>Created play and reset buttons to trigger rerenders of scatter plot and set pacing of rerenders using vanilla Javascript (setInterval, setTimeout).</li>
+        </ul>
+    </div>
+
+    <div class="employment-page-break">
+        <div class="employers">EMPLOYMENT</div>
+        <div class="page-break"></div>
+    </div>
+
+    <div class="projects">
+        <div class="project-title">Summer Collaborator</div>
+        <br><br/>
+        <div class="project-subtitle"><i>Tinkering School:  April 2019 - August 2019</i></div>
+        <ul class="project-list">
+            <li>Showed leadership as camp captain in overseeing the completion of every project on site,  managing the camp kitchen and provisioning food and building supplies for over 50 people. </li>
+            <li>Taught woodworking and construction practices to high school-aged kids through project based learning. Taught proper safety protocols around electric saws, nail guns, and different power tools. </li>
+        </ul>
+    </div>
+
+     <div class="projects">
+        <div class="project-title">Line Cook</div>
+        <br><br/>
+        <div class="project-subtitle"><i>The Hound: August 2017 - April 2019</i></div>
+        <ul class="project-list">
+            <li>Took responsibility for inventory and setup during morning shifts under sous chef. </li>
+            <li>Worked grill, grill-plate, fry and salad stations in a high volume, fast paced kitchen.</li>
+        </ul>
+    </div>
+
+     <div class="employment-page-break">
+        <div class="employers">EDUCATION</div>
+        <div class="page-break"></div>
+    </div>
+
+    <div class="technologies">
+        <div class="proficient bold">
+            <div class="highlight bold">App Academy, Bootcamp Graduate</div>
+            August 2019 - December 2019 · San Francisco, CA
+        </div>
+        <div class="proficient bold">
+            <div class="highlight bold">Oberlin College</div>
+             August 2013 -  December 2015 · Oberlin, OH
+        </div>
+    </div>
+    
+    <br/><br/><br/>
+    
+</div>

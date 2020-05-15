@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/home' => 'static_pages#home'
+  root :to => "static_pages#home"
   get 'resume' => 'static_pages#resume'
   get '/projects' => 'static_pages#projects'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
