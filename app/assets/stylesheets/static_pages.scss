@@ -20,7 +20,7 @@ body {
     .large-box {
         height: 320px;
         width: 320px;
-        background-color: #f2f2f2;
+        background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -344,5 +344,33 @@ path {
 
 .bold {
     font-weight: 600;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    .projects-container {
+        width: 624px;
+        .home-button {
+            text-decoration: none;
+            color: #4e4e4e;
+            border-bottom: 2px solid #fed700;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: row;
+            .project {
+                margin: 0px 8px 8px 0px;
+                width: 200px;
+                height: 200px;
+                background-color: #cecec3;
+            }
+            .project:hover {
+                cursor: pointer;
+            }
+        }
+    }
 }
 
