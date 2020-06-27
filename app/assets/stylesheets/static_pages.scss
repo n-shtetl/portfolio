@@ -414,17 +414,37 @@ body {
                     transition: background-color 0.2s ease;
                 }
                 .block {
-                    .title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    color: #4e4e4e;
+                    .block-text {
+                        color: #4e4e4e;
+                        width: 90%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        .code-links {
+                            width: 60%;
+                            display: flex;
+                            justify-content: space-between;
+                            a {
+                                text-decoration: none;
+                                color: #4e4e4e;
+                                border-bottom: 1px solid #fed700;
+                            }
+                        }
 
                     }
+                    .title {
+                        color: #4e4e4e;
+                        font-weight: 100;
+                    }
                     mark {
-                        background-color: #fed700;
+                        background-color: lightgoldenrodyellow;
                     }
-                    a {
-                        text-decoration: none;
-                        color: black;
-                        border-bottom: 1px solid #fed700;
-                    }
+                    
                     width: 200px;
                     height: 196px;
                     // padding-left: 15px;
