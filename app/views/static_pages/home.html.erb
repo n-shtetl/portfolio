@@ -1,7 +1,9 @@
 <div class="page-container">
     <div class="svg-container">
-        <svg class="wavy">
-            <path class="wavy-path path1" d="M20,20"></path>
+        <svg id="wavy">
+            <%
+=begin%>
+ <path class="wavy-path path1" d="M20,20"></path>
             <path class="wavy-path path2" d="M20,20"></path>
             <path class="wavy-path path3" d="M20,20"></path>
             <path class="wavy-path path4" d="M20,20"></path>
@@ -10,7 +12,9 @@
             <path class="wavy-path path7" d="M20,20"></path>
             <path class="wavy-path path8" d="M20,20"></path>
             <path class="wavy-path path9" d="M20,20"></path>
-            <path class="wavy-path path10" d="M20,20"></path>
+            <path class="wavy-path path10" d="M20,20"></path> 
+<%
+=end%>
         </svg>
     </div>
     <div class="large-box">
@@ -26,35 +30,5 @@
         </div>
     </div>
 </div>
+<%= javascript_include_tag( 'wavy.js' ) %>
 
-<script>
-    function sine() {
-        let xs = [];
-        for (let i = 0; i < 500; i++) {
-            xs.push(i);
-        }
-
-        let t = 0;
-        function animate() {
-            for (let i = 1; i <= 10; i++) {
-                let points = xs.map(x => {
-                let y = (i * 25) * Math.sin(1.15*x+t/10)
-                return [x, y];
-                });
-                let path = "M" + points.map(p => {
-                return p[0] + "," + p[1];
-                }).join(" L")
-                if (document.querySelector(`.path${i}`) === null) break;
-                document.querySelector(`.path${i}`).setAttribute("d", path);
-            }
-
-            t += 0.15;
-
-            requestAnimationFrame(animate);
-
-        }
-        
-        animate();
-    }
-    sine();
-</script>
