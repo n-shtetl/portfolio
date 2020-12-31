@@ -4,14 +4,14 @@
     <title>Portfolio</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+     <meta name="description" property="og:description" content="A fullstack pixel-perfect tribute to the serious eats site.">
     <meta property="og:title" content="Max Phillips' Portfolio Site" />
-     <meta name="image" property='og:image' content="<%= image_url('screenshot.png') %>"/>
-     <meta property="og:description"
-       content="Max Phillips' portfolio site"
-     />
-     <meta property="og:url"
-       content="http://www.maxcphil.com/"
-     />
+    <meta name="image" property="og:image" content="<%= image_url('screenshot.png') %>">
+    <meta name="author" content="Max Phillips">
+    <meta
+      property="og:url"
+      content="http://www.maxcphil.com/"
+    />
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
